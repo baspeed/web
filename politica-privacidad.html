@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Política de privacidad - BASpeed</title>
+    <meta name="twitter:description" content="Test de velocidad, y suite de diagnostico de la conexión a internet.">
+    <meta name="twitter:image" content="assets/img/tech/ordenador-1.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="assets/img/tech/ordenador-1.jpg">
+    <meta name="twitter:title" content="BASpeed">
+    <meta name="description" content="Política de privacidad tanto del software ofrecido a los usuarios, como de esta misma página.">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/scenery/BASpeedx16.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/cookies.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140833381-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140833381-5');
+</script>
+<!--//BLOQUE COOKIES-->
+<div id="barraaceptacion">
+    <div class="inner">
+        Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real 
+        Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.
+        <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>OK</b></a> | 
+        <a href="http://baspeed.bandaancha.eu/politica-privacidad.html" target="_self" class="info">Más información</a>
+    </div>
+</div>
+ 
+<script>
+function getCookie(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1){
+        c_value = null;
+    }else{
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1){
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+ 
+function setCookie(c_name,value,exdays){
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+ 
+if(getCookie('baspeed')!="1"){
+    document.getElementById("barraaceptacion").style.display="block";
+}
+function PonerCookie(){
+    setCookie('baspeed','1',365);
+    document.getElementById("barraaceptacion").style.display="none";
+}
+</script>
+<!--//FIN BLOQUE COOKIES-->
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="../index.html">BASpeed <br>Software</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../index.html">inicio</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../caracteristicas.html">características</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../descargas.html">DESCARGAs</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../sobre-nosotros.html">sobre nosotros</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../politica-privacidad.html">privacidad</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../blog.html">BLOG</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">enlaces</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="https://bandaancha.eu" target="_blank">Portal de bandaancha.eu</a>
+                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="https://bandaancha.eu/foros/comunidad/herramientas/baspeed" target="_blank">Foro oficial de BASpeed</a>
+                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="https://bandaancha.eu/foros/enviar/41?w" target="_blank">Mandar sugerencia para BASpeed</a>
+                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="https://djnacho.000webhostapp.com" target="_blank">Página de djnacho</a>
+                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="https://almacendia.000webhostapp.com" target="_blank">Almacén DIA Android</a></div>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="page faq-page">
+        <section class="clean-block clean-faq dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Política de privacidad</h2>
+                    <p>Aquí encontrarás la política de privacidad tanto de este site oficial, como del software que ponemos a tu disposición.</p>
+                </div>
+                <div class="block-content">
+                    <div class="faq-item">
+                        <h2 class="question" style="font-size: 32px;line-height: 48px;">Política de privacidad del site oficial de BASpeed</h2>
+                        <div class="answer">
+                            <p>En virtud del <a href="https://www.boe.es/boe/dias/2012/03/31/pdfs/BOE-A-2012-4442.pdf">real decreto 13/2012</a>, <strong>José Ignacio Legido Barrios</strong>, creador de este sitio web informa al usuario del mismo que este
+                                sitio web tiene cookies que son necesarias para el correcto funcionamiento del mismo. Se detallan las cookies usadas en este sitio:<br><br><strong>Cookie del sitio web</strong>, identificada con el nombre de baspeed, la
+                                cual se guarda como aceptación de la condición de que este sitio web pueda usar cookies para su correcto visionado y funcionamiento en el PC del usuario.<br><br><strong>Cookies de disqus.com</strong>, usadas por el sitio
+                                <a href="https://disqus.com">disqus.com</a> y necesarias para poder ofrecer un sistema de comentarios a los usuarios en las entradas del blog de este sitio web. Son identificadas como subdominios de disqus.com y algunos
+                                otros dominios distintos usados por disqus.com.<br><br><strong>Cookies de Google.com</strong>, usadas en concreto en <a href="https://analytics.google.com">Google Analitycs</a>, para poder ver estadísticas de visitas a
+                                la página web (como número de visitantes, países de origen de las visitas, etc).<br><br>Si desea eliminar cualquier cookie guardada por este sitio web, puede hacerlo perfectamente siguiendo las instrucciones que se dan
+                                <a href="https://es.digitaltrends.com/computadoras/como-eliminar-cookies">en la siguiente página web</a>.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h2 class="question" style="font-size: 32px;">Política de privacidad del software creado por djnacho</h2>
+                        <div class="answer">
+                            <p><strong>El software</strong> que se pone a disposición del usuario en esta página web, <strong>necesita ser instalado en el dispositivo del usuario</strong> (ya sea este un ordenador, o bien un dispositivo móvil Android). <strong>Se garantiza</strong>                                al usuario que una vez instalado el software, <strong>este no accederá a datos personales ni información privada del usuario</strong> contenida en dichos dispositivos.<br><br><strong>El software puede acceder a información como la IP</strong>                                del dispositivo del usuario, necesaria para las operaciones de test de velocidad y demás operaciones de diagnóstico de la conexión a internet del usuario. <strong>Esta información no se transfiere a ningún sitio</strong>,
+                                si no que <strong>es mostrada en pantalla como información de los tests</strong> pertinentes al usuario.<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Primeros pasos</h5>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li></li>
+                        <li><a href="../descargas.html">Descargas</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Sobre nosotros</h5>
+                    <ul>
+                        <li></li>
+                        <li><a href="../sobre-nosotros.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Soporte</h5>
+                    <ul>
+                        <li><a href="https://bandaancha.eu/foros/comunidad/herramientas/baspeed" target="_blank">Foro oficial</a></li>
+                        <li><a href="https://bandaancha.eu" target="_blank">Portal de bandaancha.eu</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li><a href="../politica-privacidad.html">Política de privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2006-2020 djnacho &amp; BASpeed Software</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

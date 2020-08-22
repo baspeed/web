@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Características - BASpeed</title>
+    <meta name="twitter:description" content="Test de velocidad, y suite de diagnostico de la conexión a internet.">
+    <meta name="twitter:image" content="assets/img/tech/ordenador-1.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="assets/img/tech/ordenador-1.jpg">
+    <meta name="twitter:title" content="BASpeed">
+    <meta name="description" content="Lista de características que distinguen a BASpeed de todo el resto de tests de velocidad.">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/scenery/BASpeedx16.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/cookies.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140833381-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140833381-5');
+</script>
+<!--//BLOQUE COOKIES-->
+<div id="barraaceptacion">
+    <div class="inner">
+        Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real 
+        Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.
+        <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>OK</b></a> | 
+        <a href="http://baspeed.bandaancha.eu/politica-privacidad.html" target="_self" class="info">Más información</a>
+    </div>
+</div>
+ 
+<script>
+function getCookie(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1){
+        c_value = null;
+    }else{
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1){
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+ 
+function setCookie(c_name,value,exdays){
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+ 
+if(getCookie('baspeed')!="1"){
+    document.getElementById("barraaceptacion").style.display="block";
+}
+function PonerCookie(){
+    setCookie('baspeed','1',365);
+    document.getElementById("barraaceptacion").style.display="none";
+}
+</script>
+<!--//FIN BLOQUE COOKIES-->
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="../index.html">BASpeed <br>Software</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../index.html">inicio</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../caracteristicas.html">características</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../descargas.html">DESCARGAs</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../sobre-nosotros.html">sobre nosotros</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../politica-privacidad.html">privacidad</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../blog.html">BLOG</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">enlaces</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="https://bandaancha.eu" target="_blank">Portal de bandaancha.eu</a>
+                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="https://bandaancha.eu/foros/comunidad/herramientas/baspeed" target="_blank">Foro oficial de BASpeed</a>
+                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="https://bandaancha.eu/foros/enviar/41?w" target="_blank">Mandar sugerencia para BASpeed</a>
+                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="https://djnacho.000webhostapp.com" target="_blank">Página de djnacho</a>
+                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="https://almacendia.000webhostapp.com" target="_blank">Almacén DIA Android</a></div>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="page">
+        <section class="clean-block features" style="background-color: #ffffff;">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Características</h2>
+                    <p>Aquí tenéis un resumen de las características más importantes de BASpeed de cara al uso por parte de los usuarios.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-5 feature-box"><i class="icon-screen-desktop icon"></i>
+                        <h4>Última tecnología</h4>
+                        <p>BASpeed está creado con Embarcadero­ Delphi. Utiliza componentes de altísima calidad de terceras compañías para obtener un nivel de detalle excelente en el entorno gráfico.</p>
+                    </div>
+                    <div class="col-md-5 feature-box"><i class="icon-share icon"></i>
+                        <h4>Código fuente abierto</h4>
+                        <p>El test de velocidad está basado en una versión del mismo que es de código abierto, accesible por todo el mundo a través de github, para que cualquiera pueda modificarlo y hacerlo más potente si quiere.</p>
+                    </div>
+                    <div class="col-md-5 feature-box"><i class="icon-organization icon"></i>
+                        <h4>La red a tope</h4>
+                        <p>En diferentes módulos de la suite BASpeed, se utiliza la tecnología multihilo que permite realizar varias tareas al mismo tiempo, de forma que el programa no se congela si una operación lleva un tiempo prolongado.</p>
+                    </div>
+                    <div class="col-md-5 feature-box"><i class="icon-refresh icon"></i>
+                        <h4>Siempre actualizado</h4>
+                        <p>El programa BASpeed tiene un actualizador propio que permite que cuando se lanza una actualización, el usuario pueda instalarla sin necesidad de desinstalar la versión anterior.</p>
+                    </div>
+                    <div class="col-md-5 feature-box"><i class="icon-people icon"></i>
+                        <h4>Colaboración continua</h4>
+                        <p>Una de las características más presentes en todo el trabajo de BASpeed es la colaboración de los usuarios del portal <a href="https://bandaancha.eu">bandaancha.eu</a> en el desarrollo de este software, aportando tests de módulos
+                            e ideas para crear nuevo software.</p>
+                    </div>
+                    <div class="col-md-5 feature-box"><i class="icon-trophy icon"></i>
+                        <h4>Publicado en sites famosos</h4>
+                        <p>BASpeed ha sido publicado en sites de descarga de software como <a href="https://baspeed.softonic.com">Softonic.com</a>, <a href="https://baspeed.uptodown.com/windows">UpToDown.com</a>, <a href="https://www.malavida.com/es/soft/baspeed">malavida.com</a>,
+                            <a href="https://www.portalprogramas.com/baspeed">portalprogramas.com</a>, etc. Eso habla ya directamente de la calidad del software que hacemos aquí.</p>
+                    </div>
+                    <div class="col-md-5 feature-box"><i class="icon-bulb icon"></i>
+                        <h4>En constante evolución</h4>
+                        <p>BASpeed tiene una trayectoria de 15 años, y nunca hemos dejado de innovar y de ir un paso más allá con un único objetivo. El usuario debe tener siempre la última tecnología a su disposición.</p>
+                    </div>
+                    <div class="col-md-5 feature-box"><i class="icon-credit-card icon"></i>
+                        <h4>Coste 0 para el usuario</h4>
+                        <p>Desde la primera versión nuestro objetivo siempre ha sido que el usuario tuviera toda la tecnología disponible sin ningún tipo de coste para el. De esta forma evitamos la piratería y fomentamos la descarga legal de programas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Primeros pasos</h5>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li></li>
+                        <li><a href="../descargas.html">Descargas</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Sobre nosotros</h5>
+                    <ul>
+                        <li></li>
+                        <li><a href="../sobre-nosotros.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Soporte</h5>
+                    <ul>
+                        <li><a href="https://bandaancha.eu/foros/comunidad/herramientas/baspeed" target="_blank">Foro oficial</a></li>
+                        <li><a href="https://bandaancha.eu" target="_blank">Portal de bandaancha.eu</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li><a href="../politica-privacidad.html">Política de privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2006-2020 djnacho &amp; BASpeed Software</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
